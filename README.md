@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://packagist.org/packages/krayin/social-login"><img src="https://img.shields.io/packagist/v/krayin/social-login.svg" alt="Latest Version"></a>
     <a href="https://packagist.org/packages/krayin/social-login"><img src="https://img.shields.io/packagist/dt/krayin/social-login.svg" alt="Total Downloads"></a>
-    <a href="https://github.com/ASD-Team-sec/krayin-social-login/actions"><img src="https://github.com/ASD-Team-sec/krayin-social-login/workflows/tests/badge.svg" alt="Tests"></a>
+    <a href="https://github.com/mfathylabs/krayin-social-login/actions"><img src="https://github.com/mfathylabs/krayin-social-login/workflows/tests/badge.svg" alt="Tests"></a>
     <a href="https://packagist.org/packages/krayin/social-login"><img src="https://img.shields.io/packagist/l/krayin/social-login.svg" alt="License"></a>
 </p>
 
@@ -24,10 +24,24 @@ Add **social authentication** to your [Krayin CRM](https://github.com/krayin/lar
 - Laravel 10.x / 11.x / 12.x
 - Krayin CRM 2.x
 
-## Installation
+## Quick Install (One Command)
 
 ```bash
-composer require krayin/social-login
+composer config repositories.social-login vcs https://github.com/mfathylabs/krayin-social-login && composer require krayin/social-login:*
+```
+
+## Installation
+
+**Step 1:** Add the repository to your Krayin CRM project:
+
+```bash
+composer config repositories.social-login vcs https://github.com/mfathylabs/krayin-social-login
+```
+
+**Step 2:** Install the package:
+
+```bash
+composer require krayin/social-login:*
 ```
 
 The service provider will be auto-discovered. Publish the config:

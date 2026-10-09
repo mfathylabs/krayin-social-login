@@ -60,9 +60,22 @@
             }
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "Krayin\\SocialLogin\\Installer::postInstall"
+        ],
+        "post-update-cmd": [
+            "Krayin\\SocialLogin\\Installer::postInstall"
+        ]
+    },
     "config": {
         "sort-packages": true
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [{
+        "name": "social-login",
+        "type": "vcs",
+        "url": "https://github.com/mfathylabs/krayin-social-login"
+    }]
 }

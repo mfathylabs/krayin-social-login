@@ -1,0 +1,68 @@
+{
+    "name": "krayin/social-login",
+    "description": "Social Authentication for Krayin CRM — Login with Google, GitHub, LinkedIn & Twitter",
+    "version": "2.1.3",
+    "type": "library",
+    "keywords": [
+        "krayin",
+        "laravel-crm",
+        "crm",
+        "social-login",
+        "social-auth",
+        "oauth",
+        "google-login",
+        "github-login",
+        "socialite",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krayin Community",
+            "email": "community@krayincrm.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/ASD-Team-sec/krayin-social-login",
+    "support": {
+        "issues": "https://github.com/ASD-Team-sec/krayin-social-login/issues",
+        "source": "https://github.com/ASD-Team-sec/krayin-social-login"
+    },
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0|^12.0",
+        "laravel/socialite": "^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Krayin\\SocialLogin\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Krayin\\SocialLogin\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Krayin\\SocialLogin\\Providers\\SocialLoginServiceProvider"
+            ],
+            "aliases": {
+                "SocialLogin": "Krayin\\SocialLogin\\Facades\\SocialLogin"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
